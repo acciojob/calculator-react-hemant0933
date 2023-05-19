@@ -16,27 +16,27 @@ const App = () => {
         setInputText("");
     }
     return(
-       <div className='calc-wrapper'>
-        <input type="text" className="calculator-input" value={inputText}/>
+       <div className='calc-wrapper Calculator'>
+        <input type="text" id="calci" className="calculator-input" value={inputText}/>
          <div className="buttons-container">
             <button onClick={clear}>C</button>
             <button onClick={buttonClick}>/</button>
             <button onClick={buttonClick}>*</button>
             <button onClick={buttonClick}>-</button>
             
-            <button onClick={buttonClick}>7</button>
-            <button onClick={buttonClick}>8</button>
-            <button onClick={buttonClick}>9</button>
+            <button onClick={buttonClick} id="btn-7">7</button>
+            <button onClick={buttonClick} id="btn-8">8</button>
+            <button onClick={buttonClick} id="btn-9">9</button>
             <button onClick={buttonClick} id="plus">+</button>
 
-            <button onClick={buttonClick}>4</button>
-            <button onClick={buttonClick}>5</button>
-            <button onClick={buttonClick}>6</button>
+            <button onClick={buttonClick} id="btn-4">4</button>
+            <button onClick={buttonClick} id="btn-5">5</button>
+            <button onClick={buttonClick} id="btn-6">6</button>
 
-            <button onClick={buttonClick}>1</button>
-            <button onClick={buttonClick}>2</button>
-            <button onClick={buttonClick}>3</button>
-            <button onClick={ans} id="equals">=</button>
+            <button onClick={buttonClick} id="btn-1">1</button>
+            <button onClick={buttonClick} id="btn-2">2</button>
+            <button onClick={buttonClick} id="btn-3">3</button>
+            <button onClick={ans} id="equal">=</button>
             <button onClick={buttonClick}>0</button>
             <button onClick={buttonClick}>.</button>
         </div>
@@ -44,3 +44,5 @@ const App = () => {
     )
 }
 export default App;
+
+// done

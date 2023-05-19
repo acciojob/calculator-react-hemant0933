@@ -1,4 +1,3 @@
-
 import  React, {useState} from "react";
 
 const App = () => {
@@ -8,12 +7,7 @@ const App = () => {
         let clickedButton = event.target;
         let value = clickedButton.innerHTML;
         setInputText(inputText + value);
-
-
-
     }
-
-
     const ans = () => {
         let result = eval(inputText);
         setInputText(result);
@@ -21,13 +15,8 @@ const App = () => {
     const clear = () => {
         setInputText("");
     }
-
-
-
-
-
     return(
-       <div>
+       <div className='calc-wrapper'>
         <input type="text" className="calculator-input" value={inputText}/>
          <div className="buttons-container">
             <button onClick={clear}>C</button>

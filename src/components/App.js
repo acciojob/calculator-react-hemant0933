@@ -18,7 +18,7 @@ const App = () => {
     return(
        <div className='calc-wrapper Calculator'>
         <input type="text" id="calci" className="calculator-input" value={inputText}/>
-         <div className="buttons-container">
+         <div className="buttons-container" id="btn-div">
             <button onClick={clear}>C</button>
             <button onClick={buttonClick}>/</button>
             <button onClick={buttonClick}>*</button>
